@@ -4,11 +4,23 @@ inspired by Kalle Halden's script to make the same automation script on my own
 
 ## install & setup
 
+firt clone the repo and modify or create your .bashrc file or .zshrc file
 ```bash
 git clone "https://github.com/bruhtazor/init-automation.git"
+cd ~
+vi .bashrc.sh
+```
+then copy in the function the path to the .command.sh file of the cloned repo
+
+```bash
+#custom create command
+create() {bash path/to/file/.command.sh create $1}
+```
+then save and restart terminal
+
+```bash
 cd init-automation
 pip install -r requirements.txt
-source ~/path/to/folder/.command.sh
 ```
 
 ## access token 
